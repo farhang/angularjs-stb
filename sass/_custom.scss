@@ -1,0 +1,206 @@
+
+@import "variables";
+@import "settings";
+/*
+alreay custom fonts "b roya", "b titr", "b kamran"
+*/
+@font-face{
+  font-family:"b roya";
+  src:url(../../assets-large/fonts/roya/broya.ttf);
+}
+
+body {
+  font-family: "b roya";
+  line-height: $base-line-height;
+  background: image-url("mosque.jpg") no-repeat scroll 0 0 transparent;
+  background-size: 100% auto;
+}
+
+.en-font {
+  font-family: $default-en-font;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.volume-container {
+  display: none;
+  width: 389px;
+  height: 65px;
+  background: image-url('volume-container.png') no-repeat scroll 0 0 transparent;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+  .volume-inner {
+    margin: 19px 0px 0 44px;
+    .volume-start {
+      width: 4px;
+      height: 19px;
+      background: image-url('volume-start.png') no-repeat scroll 0 0 transparent;
+      float: left;
+    }
+    .volume-middle {
+      width: 0;
+      height: 19px;
+      background: image-url('volume-middle.png') repeat-x scroll 0 0 transparent;
+      float: left;
+    }
+    .volume-end {
+      width: 19px;
+      height: 19px;
+      background: image-url('volume-end.png') no-repeat scroll 0 0 transparent;
+      float: left;
+    }
+  }
+}
+.main-container {
+  .nav {
+    color: #fff;
+    background-color: #261f1f;
+    padding: 10px;
+    .date-container {
+
+    }
+    ul {
+      text-align: center;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
+  .container {
+    .welcome-board {
+      background: image-url("wellcome-container.png") no-repeat scroll 0 0 transparent;
+      background-size: 100% auto;
+      margin-top: 10%;
+      height: 400px;
+    }
+    .inner {
+      padding: 123px 50px 0 50px;
+      color: white;
+      text-align: justify;
+    }
+    .enter {
+      background: image-url("wellcome.enter-btn.png") no-repeat scroll 0 0 transparent;
+      background-size: 100% auto;
+      width: 100;
+      height: 100;
+      box-sizing: border-box;
+      color: #fff;
+      margin: 44px auto 0 auto;
+      text-align: center;
+      padding-top: 35px;
+      vertical-align: middle;
+    }
+  }
+  .logo-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    .logo {
+      background: image-url("logo-small.png") no-repeat scroll 0 0 transparent;
+      background-size: 100% auto;
+      min-height: 200px;
+      width: 200px;
+      position: relative;
+      left: -50%;
+    }
+  }
+
+  .channels-container {
+    min-height: 434px;
+    color: $color-white;
+    .channel-list {
+      background: image-url("channels-bg.png") no-repeat scroll 0 0 transparent;
+      width: 487px;
+      height: 434px;
+      .channel-list-inner {
+        padding: 76px 51px 0;
+        .list-item {
+          background: image-url("channel-selector.png") no-repeat scroll center center transparent;
+          background-size: 100% 98px;
+          /* border: 1px solid red; */
+          overflow: hidden;
+          height: 277px;
+          width: 100%;
+          ul {
+            overflow: hidden;
+            li {
+              list-style-type: none;
+              line-height: 55px;
+              font-size: 24px;
+              padding-right: 20px;
+              .index {
+                float: right;
+              }
+              .chname {
+                padding-right: 5px;
+                float: right;
+                width: 85%;
+                text-align: center;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .guide-container {
+    .remote-control {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .channel-info-container {
+    /*display: none;*/
+    background: image-url("channels-info.png") no-repeat scroll 0 0 transparent;
+    width: 100%;
+    background-size: 100% auto;
+    height: 171PX;
+    .channel-info {
+      .logo {
+        background: image-url("channel-4-logo.png") no-repeat scroll 0 0 transparent;
+        background-size: 100% auto;
+        float: right;
+        width: 100px;
+        height: 100px;
+        margin: 31px 17px 0 0;
+      }
+      .name {
+        font-size: 2em;
+        float: right;
+        margin: 65px 30px 0 0;
+        color: $color-white;
+      }
+
+    }
+  }
+  .footer {
+    min-height: 40px;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.livetv {
+  /*background-image: none*/;
+}

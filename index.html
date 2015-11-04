@@ -1,0 +1,49 @@
+<html lang="fa" dir="rtl" ng-app="stbApp" class="stbApp" ng-controller="siteController" ng-keydown="RemoteCall(e)">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="assets-small/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <title>Main Page</title>
+</head>
+<body>
+<div class="main-container">
+  <div ui-view="header" id="header" class="header"></div>
+  <div ui-view="content" id="container-wrapper" class="container-wrapper clearfix"></div>
+  <div ui-view="footer" id="footer" class="clearfix"></div>
+</div><!-- .main-container -->
+
+<!-- Init JS -->
+<script src="assets-small/defaults/languageTerms.js"></script>
+
+<!-- Jquery Dependency -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+
+<!-- Angular Dependency -->
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="vendor/oclazyload/dist/ocLazyLoad.min.js"></script>
+<script src="vendor/angular-hotkeys/build/hotkeys.min.js"></script>
+<script src="vendor/angular-translate/angular-translate.min.js"></script>
+
+<!-- Helpers -->
+
+<!-- App Dependency -->
+<script src="assets-small/js/constants.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/app.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/app.route.js"></script>
+<script src="app/app.uri.js"></script>
+
+<!-- App Models -->
+<script src="app/models/channel.js"></script>
+
+<!-- App Controllers -->
+<script src="app/controllers/shared/siteController.js"></script>
+<script src="app/controllers/shared/bodyController.js"></script>
+<script src="app/controllers/shared/footerController.js"></script>
+<script src="app/controllers/shared/headerController.js"></script>
+
+<!-- Other JS libraries -->
+</body>
+</html>

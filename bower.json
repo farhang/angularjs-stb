@@ -1,0 +1,16 @@
+{
+  "name": "Soroush Hightech",
+  "version": "1.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "latest",
+    "jquery": "~2.1.4",
+    "angular": "~1.5.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-animate": "~1.5.0",
+    "oclazyload" : "~1.0.8",
+    "angular-hotkeys": "https://github.com/chieffancypants/angular-hotkeys.git#~1.6.0",
+    "angular-translate": "~2.8.1"
+  }
+}
