@@ -2,8 +2,8 @@
  * Developed by Farhang Darzi
  */
 
-angular.module(constants.appName).controller('siteController', ['$scope', 'channel',
-  function ($scope, channel) {
+angular.module(constants.appName).controller('siteController', ['$scope', 'channel', 'user',
+  function ($scope, channel, user) {
     var channelObj = {
       'macAddress': '00-00-00-00-00-00',
       'assetType' : 'livechannel',
@@ -11,6 +11,8 @@ angular.module(constants.appName).controller('siteController', ['$scope', 'chann
     };
     // Get all list channels and send it to $rootScope.channelList
     channel.getAll(channelObj);
-    //console.log(allChannels);
+
+    user.getInfo(channelObj.macAddress);
+
   }
 ]);

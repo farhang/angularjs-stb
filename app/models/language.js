@@ -1,4 +1,0 @@
-/**
- * Developed by Farhang Darzi
- */
-

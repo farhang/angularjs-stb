@@ -12,9 +12,9 @@ stbApp.value('uri', {
       return constants.urls.apiBaseUrl() + "play_url.php?package_product_id=" + paramObj.productID + "&asset_id=" + paramObj.assetID + "&mac=" + paramObj.macAddress;
     },
   },
-  language: {
-    get: function(paramObj){
-      return constants.urls.apiBaseUrl() + 'getGuestName.php?macAddress='+paramObj.macAddress;
+  user: {
+    getInfo: function(macAddress){
+      return constants.urls.apiBaseUrl() + 'getGuestName.php?macAddress='+macAddress;
     }
   }
 });
