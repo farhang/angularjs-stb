@@ -25,7 +25,8 @@ stbApp.controller('bodyController', [
       description: 'This one goes to 11',
       callback: function() {
         console.log('enter btn pressed');
-        $state.go("stb.channel");
+        //$state.go("stb.channel");
+        console.log($rootScope.channelList);
       }
     });
 

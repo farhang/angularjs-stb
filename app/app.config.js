@@ -23,9 +23,10 @@ stbApp.config(function ($translateProvider) {
   $translateProvider.translations('ar', {
     WELLCOME_TITLE: 'زوار المحترم',
     WELLCOME_DESC : 'نرحب بکم فی الفندق نگین، نتمنی لکم الاقامة طیبة بجوار علی بن موسی الرضا علیه السلام'
-  })
+  });
 
   $translateProvider.preferredLanguage('fa');
+  $translateProvider.useSanitizeValueStrategy('escape');
 });
 
 stbApp.config([

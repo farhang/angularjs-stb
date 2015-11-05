@@ -4,6 +4,8 @@
 stbApp.value('uri', {
   channel: {
     getAll: function(paramObj){
+      console.log(paramObj);
+      console.log(constants.urls.apiBaseUrl() + 'channel_list.php?mac=' + paramObj.macAddress + "&asset_type=" + paramObj.assetType + "&search_by=" + paramObj.searchby + "::TV");
       return constants.urls.apiBaseUrl() + 'channel_list.php?mac=' + paramObj.macAddress + "&asset_type=" + paramObj.assetType + "&search_by=" + paramObj.searchby + "::TV";
     },
     getUrl: function(paramObj){

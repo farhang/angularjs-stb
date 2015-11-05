@@ -1,4 +1,4 @@
-<html lang="fa" dir="rtl" ng-app="stbApp" class="stbApp" ng-controller="siteController" ng-keydown="RemoteCall(e)">
+<html lang="fa" dir="rtl" ng-app="stbApp" class="stbApp" ng-controller="siteController">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" href="assets-small/css/app.css" type="text/css" />
@@ -14,6 +14,7 @@
 
 <!-- Init JS -->
 <script src="assets-small/defaults/languageTerms.js"></script>
+<script src="assets-small/js/lib/x2json/x2json.min.js"></script>
 
 <!-- Jquery Dependency -->
 <script src="vendor/jquery/dist/jquery.min.js"></script>
@@ -21,6 +22,7 @@
 <!-- Angular Dependency -->
 <script src="vendor/angular/angular.js"></script>
 <script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
 <script src="vendor/oclazyload/dist/ocLazyLoad.min.js"></script>
 <script src="vendor/angular-hotkeys/build/hotkeys.min.js"></script>
 <script src="vendor/angular-translate/angular-translate.min.js"></script>
@@ -37,6 +39,7 @@
 
 <!-- App Models -->
 <script src="app/models/channel.js"></script>
+<script src="app/models/language.js"></script>
 
 <!-- App Controllers -->
 <script src="app/controllers/shared/siteController.js"></script>
